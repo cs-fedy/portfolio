@@ -1,0 +1,44 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.experience-items {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.experience-items:before,
+.experience-items:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.experience-items:before {
+  left: 0;
+}
+
+.experience-items:after {
+  right: 0;
+}
+
+.experience-slide {
+  display: inline-block;
+  animation: 300s slide infinite linear;
+}
+
+.item-img {
+ height: 80px !important;
+ width: auto !important;
+ margin: 0 40px !important;
+}

@@ -1,0 +1,25 @@
+.profile-pic {
+  max-width: 450px;
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .profile-pic {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+.square-image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 1.5rem;
+  color: black;
+}
